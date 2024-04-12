@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
-import './LRSlider.css';
-import About from './About';
-import Contact from './Contact';
+import './styles/LRSlider.css';
+import About from './routes/About';
+import Contact from './routes/Contact';
+import { useNavigate } from 'react-router-dom';
 
-const LRSlider = () => {
+const LRSlider = ({Route, left, right}) => {
   const [pageIndex, setPageIndex] = useState(0);
-  const pages = [
-    <About/>,
-    <Contact/>
-  ];
 
-  const goLeft = () => {
-    setPageIndex(pageIndex > 0 ? pageIndex - 1 : pages.length - 1);
-  };
-
-  const goRight = () => {
-    setPageIndex(pageIndex < pages.length - 1 ? pageIndex + 1 : 0);
-  };
+  const navigate = useNavigate();
+  console.log("whats happening")
+  const goLeft = () => navigate(left);
+  const goRight = () => navigate(right);
 
   return (
     <div className="slider-container">
-      {pages[pageIndex]}
+      {Route}
       <button onClick={goLeft} className="left-arrow">←</button>
       <button onClick={goRight} className="right-arrow">→</button>
     </div>

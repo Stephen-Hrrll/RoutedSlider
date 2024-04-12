@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "title" : "Project 1",
+            "description" : "This is a project, the first one",
+            "image" : "https://dummyimage.com/sqrpop",
+            "link" : "https://github.com/Stephen-Hrrll",
+            "tags" : ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            "title" : "Project 2",
+            "description" : "This is a project one more time",
+            "image" : "https://dummyimage.com/sqrpop",
+            "link" : "https://github.com/Stephen-Hrrll",
+            "tags" : ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            "title" : "Project 3",
+            "description" : "This is a project again",
+            "image" : "https://dummyimage.com/sqrpop",
+            "link" : "https://github.com/Stephen-Hrrll",
+            "tags" : ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            "title" : "Project 4",
+            "description" : "This is a project too",
+            "image" : "https://dummyimage.com/sqrpop",
+            "link" : "https://github.com/Stephen-Hrrll",
+            "tags" : ["HTML", "CSS", "JavaScript"]
+        }
+    ]
+}
